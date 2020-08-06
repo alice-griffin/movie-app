@@ -1,0 +1,4 @@
+<div>
+    <span title="Get details"><img [src]="child.poster_path ? 'https://image.tmdb.org/t/p/original' + child.poster_path : 'https://via.placeholder.com/150'" [routerLink]="['/details']" (click)="setMovieDetails(child)"></span>
+    <span title="Add movie to Watchlist"><i [ngClass]="toggle ? 'fas fa-heart' : 'far fa-heart'" (click)="addToFavorites(child)"></i></span>
+</div>

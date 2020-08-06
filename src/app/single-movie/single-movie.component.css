@@ -1,0 +1,35 @@
+img {
+  height: auto;
+  width: 175px;
+  cursor: pointer;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+  font-weight: 300;
+  margin: 20px;
+  padding: 30px 20px 20px 20px;
+  width: 250px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  height: 335px;
+  font-family: "Roboto", sans-serif;
+}
+
+.fas {
+  margin: 15px 0px 5px 0px;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.far {
+  margin: 15px 0px 5px 0px;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}

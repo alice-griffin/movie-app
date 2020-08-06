@@ -1,0 +1,39 @@
+<section>
+    <header>
+        <h1>Movie Night <i class="fas fa-film"></i></h1>
+    </header>
+
+    <a routerLink="/favorites" routerLinkActive="active"><button class="watchlist-btn">View Watchlist</button></a>
+
+    <form class="formclass" #searchForm="ngForm" (submit)="formSubmitted(searchForm)">
+
+        <div>
+            <p>Search by Year</p>
+            <input name="year" type='text' placeholder="ex: '2015'" ngModel>
+        </div>
+
+
+        <div class="rating">
+            <p>Search by Rating</p>
+            <input name="rating" type="number" id="less" placeholder="ex: '8.5'" ngModel>
+            <input type="radio" [value]="true" id="greater" name="greaterThanRating" ngModel><label
+                for="greater">Greater than</label>
+            <input type="radio" [value]="false" name="greaterThanRating" ngModel><label for="less">Less than</label>
+
+        </div>
+
+        <div>
+            <p>Search by Genre</p>
+            <select name="genre" ngModel onChange="this.searchForm.submit()">
+                <option *ngFor="let genre of getGenres()" [value]="genre.id">{{genre.name}}</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Search by Actor</p>
+            <input name="actor" ngModel>
+        </div>
+
+        <button class="submit-btn" type="submit">Submit</button>
+    </form>
+</section>

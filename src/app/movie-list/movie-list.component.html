@@ -1,0 +1,11 @@
+<body>
+
+<header>
+    <app-search-criteria></app-search-criteria>
+</header>
+
+<div>
+    <app-single-movie *ngFor="let movie of getMovies()" [child]="movie"></app-single-movie>
+</div>
+
+</body>

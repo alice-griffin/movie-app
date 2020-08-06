@@ -1,0 +1,26 @@
+<body>
+  <div class="nav">
+    <header>
+      <h2>Movie Night <i class="fas fa-film"></i> </h2>
+    </header>
+    <h2>Your Favorites</h2>
+    <a routerLink="/home" routerLinkActive="active"
+      ><button>Back to Discover Page</button></a
+    >
+  </div>
+  <div class="content">
+    <div class="favorite-container" *ngFor="let movie of getMovies()">
+      <img
+        [routerLink]="['/details']"
+        [src]="
+          movie.poster_path
+            ? 'https://image.tmdb.org/t/p/original' + movie.poster_path
+            : 'https://via.placeholder.com/150'
+        "
+      />
+      <span title="Remove from Favorites List"
+        ><i class="fas fa-times" (click)="removeFromFavorites(movie)"></i
+      ></span>
+    </div>
+  </div>
+</body>

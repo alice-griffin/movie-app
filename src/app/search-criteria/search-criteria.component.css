@@ -1,0 +1,135 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #662d91;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+section form div {
+  display: inline-block;
+  padding: 0px 20px;
+  margin-right: 5px;
+  border-left: 2px solid #4c256d;
+}
+
+section form div p {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+form button {
+  margin-right: 25px;
+}
+
+button {
+  background-color: #8a40cc;
+  border-radius: 10px;
+  border: 2px solid #8a40cc;
+  color: white;
+  padding: 5px;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+img {
+  width: 200px;
+}
+
+input {
+  background-color: #2c1942;
+  border-radius: 3px;
+  border: 1px solid #2c1942;
+  color: white;
+}
+
+select {
+  background-color: #2c1942;
+  border-radius: 3px;
+  border: 1px solid #2c1942;
+  color: white;
+}
+
+@media only screen and (max-width: 1370px) {
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 340px;
+  }
+
+  section form div {
+    display: flex;
+    border: none;
+    align-items: center;
+    line-height: 40px;
+  }
+
+  section form div p {
+    margin-right: 10px;
+  }
+
+  .watchlist-btn {
+    width: 200%;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .submit-btn {
+    width: 45%;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  section {
+    width: 100%;
+    height: 340px;
+    padding: 0;
+  }
+
+  section form div {
+    display: flex;
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 0px;
+    line-height: 15px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  .watchlist-btn {
+    width: 98%;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .submit-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 98%;
+    position: fixed;
+  }
+
+  form {
+    width: 100%;
+  }
+}

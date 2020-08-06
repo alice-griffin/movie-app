@@ -1,0 +1,22 @@
+<body>
+    <div class="nav">
+        <header>
+            <h2>Movie Night <i class="fas fa-film"></i> </h2>
+        </header>
+        <h2>Movie Info</h2>
+        <a routerLink="/home" routerLinkActive="active"><button>Back to Discover Page</button></a>
+    </div>
+
+    <div class="content">
+        <div class="movie-poster">
+            <img class="poster"
+                [src]="details.poster_path ? 'https://image.tmdb.org/t/p/original' + details.poster_path : 'https://via.placeholder.com/150'">
+        </div>
+        <div class="movie-info">
+            <p>Title: {{details.title}}</p>
+            <p>Release date: {{details.release_date}}</p>
+            <p>Voter average rating: {{details.vote_average + "*"}}</p>
+            <p>Movie overview: {{details.overview}}</p>
+        </div>
+    </div>
+</body>
